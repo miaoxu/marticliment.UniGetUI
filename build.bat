@@ -53,64 +53,64 @@ popd
 pushd wingetui_bin
 
 %py% -m PyInstaller "Win.spec"
-if %errorlevel% neq 0 goto:error
+@REM if %errorlevel% neq 0 goto:error
 
-timeout 5
+@REM timeout 5
 
-pushd dist\wingetuiBin\wingetui
-move choco-cli ..\choco-cli
-popd
+@REM pushd dist\wingetuiBin\wingetui
+@REM move choco-cli ..\choco-cli
+@REM popd
 
-pushd dist\wingetuiBin\PySide6
-del opengl32sw.dll
-del Qt6Quick.dll
-del Qt6Qml.dll
-del Qt6Pdf.dll
-del Qt6OpenGL.dll
-del Qt6QmlModels.dll
-del Qt6Network.dll
-del Qt6DataVisualization.dll
-del Qt6VirtualKeyboard.dll
-del QtDataVisualization.pyd
-del QtOpenGL.pyd
-popd 
-pushd dist\wingetuiBin\choco-cli
-rmdir /Q /S .chocolatey
-rmdir /Q /S lib
-rmdir /Q /S lib-bad
-rmdir /Q /S lib-bkp
-rmdir /Q /S logs
-mkdir lib
-mkdir logs
-mkdir .chocolatey
-mkdir lib-bad
-mkdir lib-bkp
-popd
+@REM pushd dist\wingetuiBin\PySide6
+@REM del opengl32sw.dll
+@REM del Qt6Quick.dll
+@REM del Qt6Qml.dll
+@REM del Qt6Pdf.dll
+@REM del Qt6OpenGL.dll
+@REM del Qt6QmlModels.dll
+@REM del Qt6Network.dll
+@REM del Qt6DataVisualization.dll
+@REM del Qt6VirtualKeyboard.dll
+@REM del QtDataVisualization.pyd
+@REM del QtOpenGL.pyd
+@REM popd 
+@REM pushd dist\wingetuiBin\choco-cli
+@REM rmdir /Q /S .chocolatey
+@REM rmdir /Q /S lib
+@REM rmdir /Q /S lib-bad
+@REM rmdir /Q /S lib-bkp
+@REM rmdir /Q /S logs
+@REM mkdir lib
+@REM mkdir logs
+@REM mkdir .chocolatey
+@REM mkdir lib-bad
+@REM mkdir lib-bkp
+@REM popd
 
-move dist\wingetuiBin ..\
-popd
-rmdir /Q /S wingetui_bin
+@REM move dist\wingetuiBin ..\
+@REM popd
+@REM rmdir /Q /S wingetui_bin
 
-"Y:\- Signing\signtool-x64\signtool.exe" sign /v /debug /fd SHA256 /tr "http://timestamp.acs.microsoft.com" /td SHA256 /dlib "Y:\- Signing\azure.codesigning.client\x64\Azure.CodeSigning.Dlib.dll" /dmdf "Y:\- Signing\metadata.json" "wingetuiBin/wingetui.exe"
-pause
+@REM "Y:\- Signing\signtool-x64\signtool.exe" sign /v /debug /fd SHA256 /tr "http://timestamp.acs.microsoft.com" /td SHA256 /dlib "Y:\- Signing\azure.codesigning.client\x64\Azure.CodeSigning.Dlib.dll" /dmdf "Y:\- Signing\metadata.json" "wingetuiBin/wingetui.exe"
+@REM pause
 
-set INSTALLATOR="%SYSTEMDRIVE%\Program Files (x86)\Inno Setup 6\ISCC.exe"
-if exist %INSTALLATOR% (
-    %INSTALLATOR% "WingetUI.iss"
-    echo You may now sign the installer
-    "Y:\- Signing\signtool-x64\signtool.exe" sign /v /debug /fd SHA256 /tr "http://timestamp.acs.microsoft.com" /td SHA256 /dlib "Y:\- Signing\azure.codesigning.client\x64\Azure.CodeSigning.Dlib.dll" /dmdf "Y:\- Signing\metadata.json" "WingetUI Installer.exe"
-    pause
-    "wingetui Installer.exe"
-) else (
-    echo "Make installer was skipped, because the installer is missing."
-    echo "Running WingetUI..."
-    start /b wingetuiBin/wingetui.exe
-)
+@REM set INSTALLATOR="%SYSTEMDRIVE%\Program Files (x86)\Inno Setup 6\ISCC.exe"
+@REM if exist %INSTALLATOR% (
+@REM     %INSTALLATOR% "WingetUI.iss"
+@REM     echo You may now sign the installer
+@REM     "Y:\- Signing\signtool-x64\signtool.exe" sign /v /debug /fd SHA256 /tr "http://timestamp.acs.microsoft.com" /td SHA256 /dlib "Y:\- Signing\azure.codesigning.client\x64\Azure.CodeSigning.Dlib.dll" /dmdf "Y:\- Signing\metadata.json" "WingetUI Installer.exe"
+@REM     pause
+@REM     "wingetui Installer.exe"
+@REM ) else (
+@REM     echo "Make installer was skipped, because the installer is missing."
+@REM     echo "Running WingetUI..."
+@REM     start /b wingetuiBin/wingetui.exe
+@REM )
 
-goto:end
+@REM goto:end
 
-:error
-echo "Error!"
+@REM :error
+@REM echo "Error!"
 
-:end
-pause
+@REM :end
+@REM pause

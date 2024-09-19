@@ -2,35 +2,41 @@
 
 contributors = [
   "marticliment",
+  "skanda890",
   "ppvnf",
   "panther7",
+  "Saibamen",
   "RavenMacDaddy",
   "Mikey1993",
+  "flatron4eg",
+  "Malus-risus",
+  "gnerkus",
   "raghavdhingra24",
   "adripo",
+  "mapi68",
   "MisterEvans78",
+  "CoolSpy3",
+  "Schtenk",
   "rumplin",
+  "turw41th",
   "uKER",
   "sklart",
-  "joguarino",
-  "sitiom",
-  "mapi68",
-  "elliot-100",
-  "candrapersada",
-  "BastianKamp",
-  "adfnekc",
-  "vedantmgoyal2009",
+  "SpaceTimee",
   "aaronliu0130",
-  "victorelec14",
-  "harleylara",
-  "flatron4eg"
+  "elliot-100",
+  "mvaneijken"
 ]
 
 contributorsInfo = [
   {
     "name": "marticliment",
     "link": "https://github.com/marticliment",
-    "contributions": 2420
+    "contributions": 3844
+  },
+  {
+    "name": "skanda890",
+    "link": "https://github.com/skanda890",
+    "contributions": 130
   },
   {
     "name": "ppvnf",
@@ -43,6 +49,11 @@ contributorsInfo = [
     "contributions": 71
   },
   {
+    "name": "Saibamen",
+    "link": "https://github.com/Saibamen",
+    "contributions": 40
+  },
+  {
     "name": "RavenMacDaddy",
     "link": "https://github.com/RavenMacDaddy",
     "contributions": 21
@@ -51,6 +62,21 @@ contributorsInfo = [
     "name": "Mikey1993",
     "link": "https://github.com/Mikey1993",
     "contributions": 15
+  },
+  {
+    "name": "flatron4eg",
+    "link": "https://github.com/flatron4eg",
+    "contributions": 13
+  },
+  {
+    "name": "Malus-risus",
+    "link": "https://github.com/Malus-risus",
+    "contributions": 8
+  },
+  {
+    "name": "gnerkus",
+    "link": "https://github.com/gnerkus",
+    "contributions": 8
   },
   {
     "name": "raghavdhingra24",
@@ -63,13 +89,33 @@ contributorsInfo = [
     "contributions": 6
   },
   {
+    "name": "mapi68",
+    "link": "https://github.com/mapi68",
+    "contributions": 4
+  },
+  {
     "name": "MisterEvans78",
     "link": "https://github.com/MisterEvans78",
     "contributions": 4
   },
   {
+    "name": "CoolSpy3",
+    "link": "https://github.com/CoolSpy3",
+    "contributions": 3
+  },
+  {
+    "name": "Schtenk",
+    "link": "https://github.com/Schtenk",
+    "contributions": 3
+  },
+  {
     "name": "rumplin",
     "link": "https://github.com/rumplin",
+    "contributions": 3
+  },
+  {
+    "name": "turw41th",
+    "link": "https://github.com/turw41th",
     "contributions": 3
   },
   {
@@ -83,18 +129,13 @@ contributorsInfo = [
     "contributions": 3
   },
   {
-    "name": "joguarino",
-    "link": "https://github.com/joguarino",
-    "contributions": 2
+    "name": "SpaceTimee",
+    "link": "https://github.com/SpaceTimee",
+    "contributions": 3
   },
   {
-    "name": "sitiom",
-    "link": "https://github.com/sitiom",
-    "contributions": 2
-  },
-  {
-    "name": "mapi68",
-    "link": "https://github.com/mapi68",
+    "name": "aaronliu0130",
+    "link": "https://github.com/aaronliu0130",
     "contributions": 2
   },
   {
@@ -103,43 +144,8 @@ contributorsInfo = [
     "contributions": 2
   },
   {
-    "name": "candrapersada",
-    "link": "https://github.com/candrapersada",
+    "name": "mvaneijken",
+    "link": "https://github.com/mvaneijken",
     "contributions": 2
-  },
-  {
-    "name": "BastianKamp",
-    "link": "https://github.com/BastianKamp",
-    "contributions": 2
-  },
-  {
-    "name": "adfnekc",
-    "link": "https://github.com/adfnekc",
-    "contributions": 2
-  },
-  {
-    "name": "vedantmgoyal2009",
-    "link": "https://github.com/vedantmgoyal2009",
-    "contributions": 2
-  },
-  {
-    "name": "aaronliu0130",
-    "link": "https://github.com/aaronliu0130",
-    "contributions": 2
-  },
-  {
-    "name": "victorelec14",
-    "link": "https://github.com/victorelec14",
-    "contributions": 1
-  },
-  {
-    "name": "harleylara",
-    "link": "https://github.com/harleylara",
-    "contributions": 1
-  },
-  {
-    "name": "flatron4eg",
-    "link": "https://github.com/flatron4eg",
-    "contributions": 1
   }
 ]
